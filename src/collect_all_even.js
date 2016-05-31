@@ -9,14 +9,13 @@ function collect_same_elements(collection_a, object_b)
 	   same = collection_a[i].key;
 	   	for(var j=0; j<object_b.value.length; j++)
 		{
-			     if(object_b.value[j] == same)
-				 {
-				    arr.push(same);
-			     }
+			if(object_b.value[j] == same)
+			{
+				arr.push(same);
+			 }
 		}
 	}	
 return arr;
 }
-
 
 module.exports = collect_same_elements;
